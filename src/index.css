@@ -1,1 +1,71 @@
-/* @import "tailwindcss"; */
+@import "tailwindcss";
+
+@layer utilities {
+   .text-gradient {
+      @apply bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent;
+   }
+
+   .wrapper {
+      /* Centers content, sets max width, adds padding */
+      @apply flex flex-col items-center justify-center mx-auto max-w-7xl px-5 py-10 w-full;
+   }
+
+   .pattern {
+         @apply fixed inset-0 -z-10;
+         min-height: 100vh;
+         
+      /* Deep dark blue-black base */
+      background-color: #0b0c15;
+      /* A subtle grid texture pattern (using CSS math) */
+      background-image: url('./bg.png') ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+   }
+   
+}
+
+@layer base {
+
+   body {
+      /* Set this to pure black to match the edge of the gradients above */
+      @apply bg-black text-white; 
+      
+   }
+
+   h1 {
+      font-weight: 700;
+      
+   }
+   
+   .search {
+      width: 500px;
+      background-color: #191945;
+      border-radius: 20px 20px  ;
+      height: 40px;
+      margin: 20px 0 0 0;
+      
+   }
+   
+   .search-con {
+      flex-direction: row;
+      display: flex;
+      margin: 0px 0 0 0;
+      padding: 8px 0 0 20px;
+   }
+
+   .img-search {
+      width: 20px;
+      height: 20px;
+      margin:  3px 10px 0 0;
+   }
+
+   .inp{
+      width: 100%;
+      border: 0px;
+   }
+
+
+
+
+}
