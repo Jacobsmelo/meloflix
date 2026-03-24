@@ -4,12 +4,17 @@ const Search = ({ searchTerm, setSearchTerm }) => {
 
    return (
       <div className="search">
+         <label for="Search" class="block search-block"></label>
          <div className='search-con'>
-            <img className='img-search' src="search.svg" alt="search"/>
-            <input className="inp" type="text" placeholder="Search here" value={searchTerm} 
+            <span class="search-icon">
+               <img class="search-img" src="search.svg" />
+               
+            </span>
+            <input id="Search" class="inp" type="text" placeholder="Search here" value={searchTerm} 
             onChange={(event) => setSearchTerm(event.target.value)}/>
          </div>
       </div>
+      
    )
 }
 
