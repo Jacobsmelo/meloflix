@@ -1,9 +1,9 @@
 ---
 name: turbopack-log
-description: Run the Melofix Next.js dev server with Turbopack logging and diagnose errors from its Windows temp log.
+description: Run the Meloflix Next.js dev server with Turbopack logging and diagnose errors from its Windows temp log.
 ---
 
-# Read Melofix Turbopack Logs
+# Read Meloflix Turbopack Logs
 
 Use this skill for the Next.js app in `next-app/`. The skill applies after the
 user initializes that app; do not treat a running development server or a

@@ -1,4 +1,4 @@
-# Melofix legacy app
+# Meloflix legacy app
 
 This folder preserves the existing Vite/React movie-discovery app as a
 reference while the replacement is planned in the separate root `next-app/`

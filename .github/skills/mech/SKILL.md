@@ -1,15 +1,15 @@
 ---
 name: mech
-description: Review Melofix code for correctness, regressions, authorization flaws, and missing tests; make focused fixes only when explicitly requested.
+description: Review Meloflix code for correctness, regressions, authorization flaws, and missing tests; make focused fixes only when explicitly requested.
 ---
 
-# Melofix Code Review
+# Meloflix Code Review
 
 Use `.github/agents/rubber-duck.agent.md` for review constraints and output
 format. This skill applies to both the preserved Vite app in `re-app/` and the
 Next.js App Router app in `next-app/`.
 
-## Melofix review context
+## Meloflix review context
 
 - Movie search, popular/discover results, and trending should come from TMDB.
 - Do not add a movie catalog database or Appwrite-backed search-count table.

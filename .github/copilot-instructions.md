@@ -1,4 +1,4 @@
-# Melofix project instructions
+# Meloflix project instructions
 
 ## Repository layout
 
@@ -9,7 +9,7 @@
 
 ## Product and data
 
-- Melofix is a movie discovery and search web app backed by TMDB.
+- Meloflix is a movie discovery and search web app backed by TMDB.
 - Use TMDB's movie search, popular/discover, and trending endpoints. Do not add
   a movie catalog database, Appwrite, or persistent search-count table. Persist
   user accounts and user-owned movie preferences in SQLite for local
@@ -21,7 +21,7 @@
   likes/ratings, and preferences), not a duplicate catalog of TMDB movie data.
 - Protect user data by authenticated ownership checks. Never store plaintext
   passwords; use an established authentication approach and secure password
-  hashing if credentials are managed by Melofix.
+  hashing if credentials are managed by Meloflix.
 - Keep the TMDB bearer token server-side in `TMDB_ACCESS_TOKEN`; never expose
   it through a `NEXT_PUBLIC_` variable or browser bundle. Have Next.js server
   code or route handlers call TMDB and validate user-supplied query parameters.
@@ -30,6 +30,11 @@
 - Preserve the current app's useful flows (popular movies, debounced search,
   trending carousel, movie cards, poster fallback) while redesigning for
   responsive, accessible behavior rather than copying the old markup.
+- The Next.js app provides email/password accounts, editable name/email,
+  account-saved dark/light themes, user-owned watchlists, and a continue-
+  watching list based on manually set in-progress status (there is no video
+  player). Watchlists can be sorted by recently/oldest added, release date, and
+  popularity.
 
 ## Implementation and verification
 

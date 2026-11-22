@@ -1,9 +1,9 @@
 ---
 name: melofix-nextapp
-description: Plan and implement Melofix's TMDB-backed movie discovery app in Next.js with MUI.
+description: Plan and implement Meloflix's TMDB-backed movie discovery app in Next.js with MUI.
 ---
 
-# Melofix Next.js migration
+# Meloflix Next.js migration
 
 Use this skill for planning and implementing the movie app rebuild. The current
 Vite application is preserved in `re-app/`; the separate target is `next-app/`.
@@ -25,7 +25,7 @@ Do not overwrite or mix the legacy app into the Next.js project.
 
 ## Product and data decisions
 
-- Brand the web app **Melofix**.
+- Brand the web app **Meloflix**.
 - Use TMDB's movie search, popular/discover, and trending HTTP endpoints.
 - Do not create a movie catalog table, Appwrite project, or persistent
   search-count feature. Replace the Appwrite-backed trending list with TMDB's
@@ -39,7 +39,7 @@ Do not overwrite or mix the legacy app into the Next.js project.
   movie records by TMDB ID; fetch movie details from TMDB instead of duplicating
   its catalog in the app database.
 - Scope every user-data query and mutation to the authenticated user. Use
-  secure password hashing if Melofix manages credentials; never store raw
+  secure password hashing if Meloflix manages credentials; never store raw
   passwords or expose database credentials to browser code.
 - Keep the TMDB bearer token in `next-app/.env.local` as
   `TMDB_ACCESS_TOKEN`. Never use a `NEXT_PUBLIC_` prefix or call authenticated
