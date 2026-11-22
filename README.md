@@ -1,16 +1,16 @@
-# React + Vite
+# Melofix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Melofix is a movie-discovery app currently implemented with Vite and React.
+This repository keeps that implementation in [`re-app/`](re-app/) and reserves
+[`next-app/`](next-app/) as the separate Next.js App Router rebuild target.
 
-Currently, two official plugins are available:
+The current app's feature inventory and run instructions are in
+[`re-app/README.md`](re-app/README.md). Its dependency-maintenance workflow is
+in [`re-app/issues/dependency-updates.md`](re-app/issues/dependency-updates.md).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**The Next.js app has not been scaffolded or rebuilt yet.** Before implementation,
+follow [`next-app/README.md`](next-app/README.md) to initialize Next.js and
+install MUI dependencies manually. The target uses TMDB directly, has no movie
+catalog database, and keeps the TMDB access token on the server. The plan uses
+SQLite locally for user data and Neon PostgreSQL in production; Neon does not
+host SQLite files.

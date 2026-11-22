@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+next-app/*.db
+next-app/*.db-*
 
 # Editor directories and files
 .vscode/*
